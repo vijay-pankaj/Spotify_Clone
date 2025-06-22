@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+    <!-- navbar -->
+    <header class="h-15 flex p-3 justify-between items-center">
+        <div class="text-xl cursor-pointer p-2 flex">
+            <i class="fa-brands fa-spotify fa-xl" style="color: #f0f0f0"></i>
+        </div>
+        <div class="relative w-102 flex items-center gap-2n ">
+           <li class="hover:scale-120 flex justify-center items-center"> <i class="fa-solid fa-house" style="color: #f0f2f4"></i></li>
+            <i
+                class="fa-solid fa-magnifying-glass absolute left-8 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            <input class="bg-[#1f1f1f] rounded-full w-full hover:border h-12 pl-10 text-white placeholder-gray-400"
+                type="search" placeholder="What do you want to play?" />
+        </div>
+        <div class="cursor-pointer p-2 flex list-none gap-3">
+            <li>
+                <button class="bg-white rounded-full font-bold w-37 cursor-pointer  hover:scale-105">
+                    Explore Premium
+                </button>
+            </li>
+            <li class=" hover:scale-110"> <i class="fa-solid fa-download" style="color: #edeff3"></i></li>
+            <li>
+                <button class="text-white font-bold cursor-pointer  hover:scale-105">
+                    Install App
+                </button>
+            </li>
+            <li class=" hover:scale-105">
+                <i class="fa-solid fa-bell" style="color: #f7f9fc"></i>
+            </li>
+            <li class=" hover:scale-105">
+                <i class="fa-solid fa-users" style="color: #fcfcfc"></i>
+            </li>
+            <li>
+                <img class="rounded-full h-8" src="./media/profile.png" alt="" />
+            </li>
+        </div>
+    </header>
+
+    <!-- sidebar -->
+    <div class="flex">
+        <aside>
+            <!-- sidebar-Header -->
+            <div class="h-30 bg-[#1f1f1f] w-90 text-white rounded-t-xl shadow-2xl">
+                <div class="font-bold list-none p-5 flex justify-between cursor-pointer">
+                    <li class="text-2xl">Your Library</li>
+                    <div>
+                        <button class="bg-slate-800 w-22 rounded-full cursor-pointer mr-5 hover:bg-[#3f3f3f]">
+                            <i class="fa-solid fa-plus" style="color: #ebebeb"></i> Create
+                        </button>
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"
+                            style="color: #e8eaed"></i>
+                    </div>
+                </div>
+                <div class="p-4 flex list-none gap-6 cursor-pointer">
+                    <li class="bg-slate-800 rounded-full w-20 text-center hover:bg-[#3f3f3f]">PlayList</li>
+                    <li class="bg-slate-800 rounded-full w-20 text-center hover:bg-[#3f3f3f]">Artist</li>
+                    <li class="bg-slate-800 rounded-full w-40 text-center hover:bg-[#3f3f3f]">
+                        PodCast & Shows
+                    </li>
+                </div>
+            </div>
+            <!-- I have to make it scroller -->
+            <div class="bg-[#1f1f1f] h-[67vh] w-90 overflow-y-scroll p-5 space-y-2">
+                <div class="hover:bg-[#1f1f1f] bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/palak.png" alt="" />
+                        <div>
+                            Palak Muchhal
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/shreya.png" alt="" />
+                        <div>
+                            Shreya Ghoshal
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/Arjitsing.png" alt="" />
+                        <div>
+                            Arjit Singh
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/sonuNigam.png" alt="" />
+                        <div>
+                            Sonu Nigam
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3  hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/mithoon.png" alt="" />
+                        <div>
+                            Mithoon
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/pritam.png" alt="" />
+                        <div>
+                            Pritam
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full space-y-4">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/rehman.png" alt="" />
+                        <div>
+                            A.R.Rahman
+                            <p class="text-gray-400">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-900 rounded-l-2xl text-white h-18 w-full space-y-4">
+                    <div class="flex items-center p-3 gap-3 hover:scale-105">
+                        <img class="rounded-full h-8" src="./media/profile.png" alt="" />
+                        <div>
+                            Vijay pankaj
+                            <p class="text-gray-400">Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- hero-container -->
+        <div class="bg-[#1f1f1f] h-screen-full w-full rounded-2xl flex-nowrap">
+            <!-- header -->
+            <div class="bg-[#660000] h-15 flex gap-4 text-white items-center p-2 rounded-t-xl">
+                <p class="bg-[#960018] rounded-full p-2 bg-white text-black cursor-pointer">All</p>
+                <p class="bg-[#960018] rounded-full p-2 hover:bg-white hover:text-black cursor-pointer">Music</p>
+                <p class="bg-[#960018] rounded-full p-2 hover:bg-white hover:text-black cursor-pointer">Podcast</p>
+            </div> 
+            <div class=" h-[69vh] overflow-y-scroll">
+                <div>
+                    <h1 class="text-white text-3xl p-5 font-bold">Recently-Played</h1>
+
+                    <div class="flex gap-4 p-4">
+                        <div class="relative hover:scale-100 scale-105 rounded-xl  cursor-pointer size-50 bg-[url(./media/krishna.png)] bg-cover hover:shadow-none shadow-2xl shadow-red-600 group "><button
+                                class="absolute bottom-8 right-5 opacity-100 group-hover:opacity-100 bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 rounded-xl  cursor-pointer size-50 bg-[url(./media/shreeram.png)] bg-cover hover:shadow-2xl shadow-red-600 group "><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 rounded-xl  cursor-pointer size-50 bg-[url(./media/hanumanji.png)] bg-cover hover:shadow-2xl shadow-red-600 group "><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 rounded-xl  cursor-pointer size-50 bg-[url(./media/shivji.png)] bg-cover hover:shadow-2xl shadow-red-600 group "><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 rounded-xl  cursor-pointer size-50 bg-[url(./media/khatushyamji.png)] bg-cover hover:shadow-2xl shadow-red-600 group "><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                    </div>
+ <h1 class="text-white text-3xl p-5 font-bold">Picked for you</h1>
+                    <div class="flex gap-4 p-4">
+                        <div class="size-50 hover:scale-105 cursor-pointer bg-[url(./media/shreeganesh.png)] bg-contain rounded-xl hover:shadow-2xl shadow-red-600"></div>
+                        <div class="size-50 hover:scale-90  cursor-pointer bg-[url(./media/profile.png)] bg-cover rounded-full hover:shadow-2xl shadow-red-600"></div>
+                        <div class="size-50 hover:scale-90  cursor-pointer bg-[url(./media/rehman.png)] rounded-full hover:shadow-2xl shadow-red-600"></div>
+                        <div class="size-50 hover:scale-90  cursor-pointer bg-[url(./media/krishnaji.jpg)] bg-cover rounded-full hover:shadow-2xl shadow-red-600"></div>
+                        <div class="size-50 hover:scale-90  cursor-pointer bg-[url(./media/mithoon.png)] bg-cover rounded-full hover:shadow-2xl shadow-red-600"></div>
+                    </div>
+
+                    <div class="flex gap-4 p-4">
+                        <div class="relative hover:scale-105 cursor-pointer rounded-xl size-50 bg-[url(./media/vanvaas.png)] group hover:shadow-2xl shadow-red-600"><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 cursor-pointer rounded-xl size-50 bg-[url(./media/lailamajnu.png)] bg-cover group hover:shadow-2xl shadow-red-600"><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 cursor-pointer rounded-xl size-50 bg-[url(./media/sanamTeriKasam.png)] bg-cover group hover:shadow-2xl shadow-red-600"><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 cursor-pointer rounded-xl size-50 bg-[url(./media/sad.png)] bg-cover group hover:shadow-2xl shadow-red-600"><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                        <div class="relative hover:scale-105 cursor-pointer rounded-xl size-50 bg-[url(./media/hit.png)] bg-cover group hover:shadow-2xl shadow-red-600"><button
+                                class="absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bg-green-600 h-10 w-10 rounded-full items-center"><i
+                                    class="fa-solid fa-play" style="color: #e5e7eb;"></i></span></button></div>
+                    </div>
+
+
+
+                    <div class="flex gap-4 p-4 w-full rounded-xl">
+                        <div
+                            class=" relative h-40 w-full bg-[url(./media/heroimage.png)] bg-contain rounded-xl flex justify-center">
+                            <div class="absolute bg-blue-700 h-full w-full opacity-30"></div>
+                        </div>
+                    </div>
+ 
+                     <h3 class="text-white text-xl p-5 font-bold">Popular-Singers</h3>
+                    <div class="flex gap-4 p-4">
+                        <div class="size-50 hover:scale-90 bg-[url(./media/palak.png)] rounded-full bg-cover hover:shadow-2xl shadow-green-700"></div>
+                        <div class="size-50 hover:scale-90 bg-[url(./media/Arjitsing.png)] rounded-full bg-cover  hover:shadow-2xl shadow-green-700"></div>
+                        <div class="size-50 hover:scale-90 bg-[url(./media/Shreya.png)] rounded-full bg-cover hover:shadow-2xl shadow-green-700"></div>
+                        <div class="size-50 hover:scale-90 bg-[url(./media/sonuNigam.png)] rounded-full bg-cover hover:shadow-2xl shadow-green-700"></div>
+                        <div class="size-50 hover:scale-90 bg-[url(./media/pritam.png)] rounded-full bg-cover hover:shadow-2xl shadow-green-700"></div>
+                    </div>
+
+                    <div class="h-70 bg-red-500 flex">
+                        <div class="bg-black w-1/5 text-white p-5"> <ul>
+                            <h3 class="text-2xl font-semibold">Company</h3>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul></div>
+                        <div class="bg-black w-1/5 text-white p-5 list-none">
+                            <h3 class="text-2xl font-semibold">Communities</h3>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </div>
+                        <div class="bg-black w-1/5 text-white p-5">
+                            <h3 class="text-2xl font-semibold">Useful links</h3>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </div>
+                        <div class="bg-black w-1/5 text-white p-5">
+                            <h3 class="text-2xl font-semibold">Spotify Plans</h3>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </div>
+                        <div class="bg-black w-1/5 text-white p-5 flex justify-around text-3xl cursor-pointer">
+                            <a target="_blank"  href="https://github.com/vijay-pankaj"><div class="hover:bg-green-600 h-12 w-12 rounded-full flex justify-center items-center"><i class="fa-brands fa-github" style="color: #e9ecf1;"></i></div></a>
+                            <a  target="_blank" href="https://www.linkedin.com/in/vijay-pankaj-48109b207/"><div class="hover:bg-blue-700 h-12 w-12 rounded-full flex justify-center items-center"><i class="fa-brands fa-linkedin" style="color: #fcfcfc;"></i></div></a>
+                        </div>
+
+                    </div>
+                    <h1 class="text-white p-4">© 2025 Vijay Pankaj </h1>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="h-20 bg-red-300 flex justify-between">
+        <!-- Side-Music -->
+        <div class="h-full w-1/5 bg-black">
+            <div class="flex items-center p-3 gap-3">
+                        <img class="h-15" src="./media/sanamTeriKasam.png" alt="" />
+                        <div class="flex justify-between w-full">
+                            <div class="text-white">
+                            Haal E-Dil-Male
+                            <p class="text-gray-400">Himesh Reshamiya</p>
+                        </div>
+                        <div class="flex items-center  hover:scale-140 scale-120 "><i class="fa-solid fa-circle-plus" style="color: #ededed;"></i></div>
+                        </div>
+                    </div>
+        </div>
+        <!-- Center Music -->
+        <div class="h-full bg-black w-3/5">
+           <div class=" flex justify-center items-center gap-3 mt-3 list-none">
+           <li><img src="./media/suffle.png" alt=""></li>
+            <li><img class="size-8" src="./media/skipPrevious.png" alt=""></li>
+            <li><img class="size-8" src="./media/play.png" alt=""></li>
+            <li><img class="size-8" src="./media/skipnext.png" alt=""></li>
+             <li><img class="" src="./media/replay.png" alt=""></li>
+            </div>
+            <div class="w-full flex justify-center mt-4 "><img class="ml-10" src="./media/musicline.png" alt=""></div>
+        </div>
+        <div class="h-full w-1/5 bg-black flex list-none items-center gap-3">
+            <li class="hover:scale-130 scale-110"><img src="./media/nowPlaying.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/lyrics.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/queue.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/connect.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/volume.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/volumeline.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/pipscreen.png" alt=""></li>
+            <li class="hover:scale-130 scale-110"><img src="./media/fullscreen.png" alt=""></li>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>
