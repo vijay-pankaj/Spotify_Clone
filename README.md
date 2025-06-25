@@ -23,4 +23,4 @@ spotify-clone/
 │ └── (images, icons, etc.)
 └── README.md
 
-👉 Click here to view the live demo
+👉 Click here to view the live demo -> https://vijay-pankaj.github.io/Spotify_Clone/
